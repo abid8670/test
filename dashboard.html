@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CV Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Candidate Dashboard</h2>
+        <div id="addCandidateForm">
+            <h3>Add New Candidate</h3>
+            <form id="newCandidate">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="cv">CV (link):</label>
+                    <input type="text" id="cv" name="cv" required>
+                </div>
+                <button type="submit">Add Candidate</button>
+            </form>
+        </div>
+        <hr>
+        <h3>Candidate List</h3>
+        <table id="candidateTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>CV</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Candidate data will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
